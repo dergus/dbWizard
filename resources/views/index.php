@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>dbWizard</title>
 </head>
 <body>
     <div id="root"></div>
 </body>
-<script src="js/app.js"></script>
+<script src="<?=env('ASSETS_PATH', '')?>/app.js"></script>
 </html>
