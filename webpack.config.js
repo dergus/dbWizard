@@ -1,6 +1,6 @@
 const path = require('path');
 const config = {
-    entry: path.resolve(__dirname, 'resources/assets/js/main.js'),
+    entry: path.resolve(__dirname, 'resources/assets/js/index.js'),
     output: {
         filename: 'app.js',
         path: path.resolve(__dirname, 'public/js')

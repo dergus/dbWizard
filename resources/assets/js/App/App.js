@@ -1,7 +1,8 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
+import Main from '../Main/Main'
 import Login from '../Login/Login'
 import styles from './App.css'
+import { Button } from 'semantic-ui-react'
 
 class App extends React.Component {
     constructor(props) {
@@ -20,13 +21,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={styles.app}>
-                <Button onClick={this.toggleLogged}>isLoggedIn</Button>
-                {
-                    this.state.isLoggedIn
-                    ? <h1>Databases</h1>
-                    : <Login/>
-                }
+            <div>
+                <Button onClick={this.toggleLogged}>toggle</Button>
+                {this.state.isLoggedIn ? <Main/> : <Login/>}
             </div>
         )
     }
