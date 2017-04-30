@@ -11,5 +11,6 @@
 <body>
     <div id="root"></div>
 </body>
+<script>window.isLoggedIn = true;</script>
 <script src="<?=env('ASSETS_PATH', '')?>/app.js"></script>
 </html>
